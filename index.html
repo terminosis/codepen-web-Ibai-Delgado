@@ -5,63 +5,82 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>CodePen Replica</title>
  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7/css/all.min.css" />
 </head>
 
 <body>
 
 
-    <!-- barra de nav -->
-    <nav>
-        <div class="nav-left">
-         <img src="imagenes/codepen-blanco.png" alt="CodePen Logo" class="logo">
+   <!-- barra de nav -->
+<header class="navbar">
+    <div class="navbar-left">
 
-            <div class="nav-links">
-             <span class="chevron">Pens</span>
-             <span class="chevron">Projects</span>
-             <span class="chevron">Posts</span>
-             <span class="chevron">Collections</span>
-             <span class="chevron">Spark</span>
-            </div>
-        </div>
-        
-        <div class="nav-right">
-         <div class="create-btn">Create ▼</div>
-         <button class="login">Log In</button>
-         <button class="signup">Sign Up</button>
-        </div>
-    </nav>
+      <!-- Logo -->
+      <img src="imagenes/codepen-blanco.png" alt="CodePen Logo" class="logo">
 
+      <!-- EXPLORE + Menu -->
+      <div class="explore-block">
+        <span class="explore-title">EXPLORE</span>
+
+        <nav class="menu">
+          <span>Pens</span>
+          <span>Projects</span>
+          <span>Posts</span>
+          <span>Collections</span>
+          <span class="spark">Spark ▼</span>
+
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="navbar-right">
+
+        <button class="btn-create">
+         Create <span class="create-arrow">▼</span>
+        </button>
+
+        <button class="btn-search">
+         <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button class="btn-login">Log In</button>
+        <button class="btn-signup">Sign Up</button>
+    </div>
+  </header>
 
     <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-left">
-         <h1>CodePen is a <span>social development environment</span> for front‑end designers and developers. 👋</h1>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>
+        CodePen is a <span class="green">social development environment</span>  
+        for front-end designers and developers. 👋
+      </h1>
 
+      <p>
+        It’s the best place to build and deploy a website, show off your work, 
+        build test cases, and find inspiration.
+      </p>
 
-         <p>It’s the best place to build and deploy a website, show off your work, build test cases, and find inspiration.</p>
+      <div class="hero-buttons">
+        <button class="btn-green-large">Sign Up for Free</button>
+        <button class="btn-dark-large">Learn More</button>
+      </div>
+    </div>
 
+    <div class="hero-preview">
+      <h3 class="preview-title">This is <span>CodePen Projects!</span></h3>
+      <img src="imagenes/captura.png" alt="Preview" class="preview-img">
+    </div>
+  </section>
 
-            <div class="hero-buttons">
-             <button class="btn-green">Sign Up for Free</button>
-             <button class="btn-dark">Learn More</button>
-            </div>
-        </div>
-
-
-        <div class="hero-right">
-         <h3 class="projects-title">This is <span>CodePen Projects!</span></h3>
-         <img src="imagenes/captura.png" alt="Codepen Project Preview" width="100%">
-        </div>
-    </section>
-
-
-    <!-- FOOTER STRIP -->
-    <footer class="footer-strip">
-     <span>CodePen for <strong>TEAMS</strong></span>
-     <span>CodePen for <strong>EDUCATION</strong></span>
-     <span>CodePen for <strong>PRIVACY</strong></span>
-     <span>CodePen for <strong>WRITING</strong></span>
-    </footer>
+  <!-- FOOTER STRIP -->
+  <footer class="footer-strip"> 
+     <span>CodePen for <strong>TEAMS</strong>
+     </span> <span>CodePen for <strong>EDUCATION</strong>
+     </span> <span>CodePen for <strong>PRIVACY</strong></span> 
+     <span>CodePen for <strong>WRITING</strong></span> 
+  </footer>
 
 </body>
 </html>
